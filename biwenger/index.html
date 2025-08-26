@@ -1,0 +1,390 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biwenger Matacanes Hypermotion</title>
+     <meta property="og:image" content="https://ejemplo.com/ruta/a/tu/logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <link rel="icon" href="3098932.png" type="image/png">
+    
+    
+    <style>
+        :root {
+            --primary-color: #ff4500; /* Naranja vibrante para el tema "Hypermotion" */
+            --secondary-color: #00bfff; /* Azul cielo */
+            --dark-color: #333;
+            --light-color: #f8f8f8;
+            --accent-color: #ffd700; /* Oro */
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d); /* Fondo con gradiente */
+            color: var(--dark-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden; /* Evita el scroll horizontal */
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: rgb(255, 255, 255);
+            padding: 15px 0;
+            width: 100%;
+            min-height: 150px;
+            
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+            position: relative;
+            overflow: hidden;
+            border-bottom: 5px solid var(--accent-color);
+
+           
+    background-image: url('unnamed.jpg'); /* Reemplaza 'header-bg.jpg' con el nombre de tu archivo */
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    
+
+    padding: 25px 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    border-bottom: 5px solid var(--accent-color);
+}
+        
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -50%;
+            width: 200%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+            transform: skewX(-20deg);
+            animation: shine 3s infinite;
+        }
+
+        @keyframes shine {
+            0% { left: -50%; }
+            100% { left: 100%; }
+        }
+
+        h1 {
+            margin: 0;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 2.8em;
+            text-shadow: 4px 4px 0px #000;
+            letter-spacing: 3px;
+        }
+
+        .header-slogan {
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-style: italic;
+            color: var(--light-color);
+        }
+
+        main {
+            padding: 30px;
+            width: 90%;
+            max-width: 900px;
+            background-color: var(--light-color);
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border: 3px solid var(--accent-color);
+            position: relative;
+        }
+
+        main::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            border: 2px dashed var(--secondary-color);
+            border-radius: 15px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: var(--primary-color);
+            font-family: 'Press Start 2P', cursive;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+        }
+
+        .section-title {
+            text-align: center;
+            color: var(--secondary-color);
+            font-family: 'Press Start 2P', cursive;
+            font-size: 1.5em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9em;
+        }
+
+        td {
+            background-color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fefefe;
+        }
+
+        tr:hover {
+            background-color: #fffacd; /* Amarillo claro al pasar el ratón */
+            transform: scale(1.01);
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 0 15px rgba(255, 69, 0, 0.3);
+        }
+
+        .trophy-icon {
+            color: var(--accent-color);
+            font-size: 1.2em;
+            margin-right: 5px;
+        }
+
+        .news-card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .news-card {
+            background-color: #ffffff;
+            border: 2px solid var(--secondary-color);
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: calc(50% - 20px); /* Dos columnas */
+            min-width: 300px;
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .news-card::before {
+            content: '📢'; /* Icono de altavoz */
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 2em;
+            opacity: 0.2;
+        }
+
+        .news-card h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+            font-size: 1.3em;
+            border-bottom: 1px dashed var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        .news-card p {
+            font-size: 0.95em;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            width: 100%;
+            background-color: #222;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+        }
+
+        .footer-text {
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+
+        .footer-motto {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .section-title {
+                font-size: 1.2em;
+            }
+            .news-card {
+                width: 100%; /* Una columna en móviles */
+            }
+            /* Propiedades comunes para todos los pseudo-elementos ::before de las noticias */
+.news-card::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+/* Icono para "El Crack" */
+.news-crack::before {
+    background-image: url('mejor.png');
+}
+
+/* Icono para "El Dandy" */
+.news-dandy::before {
+    background-image: url('sandy.png');
+}
+
+/* Icono para "Vaya Día" */
+.news-vayadia::before {
+    background-image: url('peor.png');
+}
+
+/* Icono para "El Llorón" */
+.news-lloron::before {
+    background-image: url('llorar.png');
+}
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>⚽ Matacanes Hypermotion ⚽</h1>
+        <p class="header-slogan" id="random-slogan"></p>
+    </header>
+
+    <main>
+        <h2>🏆 Clasificación de la Liga 🏆</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Posición</th>
+                    <th>Nombre de Usuario</th>
+                    <th>Puntos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><span class="trophy-icon">🥇</span> 1</td><td>El Paga Clausulas</td><td>121</td></tr>
+                <tr><td><span class="trophy-icon">🥈</span> 2</td><td>Luis Cuervas</td><td>114</td></tr>
+                <tr><td><span class="trophy-icon">🥉</span> 3</td><td>Bad Topo</td><td>109</td></tr>
+                <tr><td>4</td><td>Nayib Romero</td><td>104</td></tr>
+                <tr><td>5</td><td>Carlitos Alcatraz</td><td>99</td></tr>
+                <tr><td>6</td><td>Union Kikecoa</td><td>99</td></tr>
+                <tr><td>7</td><td>Pierluigi Acosta</td><td>98</td></tr>
+                <tr><td>8</td><td>Cabrero Vete Ya</td><td>87</td></tr>
+                <tr><td>9</td><td>Los Tatos</td><td>85</td></tr>
+                <tr><td>10</td><td>Frantiago Abascal</td><td>81</td></tr>
+                <tr><td>11</td><td>Banderilleros</td><td>79</td></tr>
+                <tr><td>12</td><td>Nico Fergar</td><td>77</td></tr>
+                <tr><td>13</td><td>Fabrizio Cortes</td><td>73</td></tr>
+                <tr><td>14</td><td>ATHR88</td><td>72</td></tr>
+                <tr><td>15</td><td>Adolf Roman</td><td>71</td></tr>
+                <tr><td>16</td><td>Mauricio Pochatino</td><td>60</td></tr>
+                <tr><td>17</td><td>Mostachon Cofrade</td><td>60</td></tr>
+                <tr><td>18</td><td>Frutas Domin</td><td>58</td></tr>
+                <tr><td>19</td><td>Puma Gil y Gil</td><td>42</td></tr>
+                <tr><td><span class="trophy-icon"></span>🏮20</td><td>JoRata</td><td>41</td></tr>
+            </tbody>
+        </table>
+
+
+        <h2 class="section-title">📢 Noticias Destacadas de la Liga 📢</h2>
+<div class="news-card-container">
+    <div class="news-card news-crack">
+      <h3>El Crack</h3> <img src="mejor.png" alt="mejor" width="80" height="75">
+        <p>El paga claúsulas y su amigo de hacendado Roig hace que duerma lider del campeonato.</p>
+    </div>
+    <div class="news-card news-dandy">
+        <h3>El Dandy</h3> <img src="sandy.png" alt="mejor" width="80" height="75">
+        <p>Con su peculiar estilo, Nayib Romero se alza a los puestos altos de la tabla.</p>
+    </div>
+    <div class="news-card news-vayadia">
+        <h3>Vaya Día</h3> <img src="peor.png" alt="mejor" width="80" height="75">
+        <p>Puma Gil y Gil vuelve a comerse a su amigo polaco Robert.</p>
+    </div>
+    <div class="news-card news-lloron">
+        <h3>El Llorón</h3> <img src="llorar.png" alt="mejor" width="80" height="75">
+        <p>Ale Román ya está sacando sus pañuelos una jornada más.</p>
+    </div>
+</div>
+    </main>
+
+    <footer>
+        <p class="footer-text">Biwenger Matacanes Hypermotion - La liga más emocionante del mundo.</p>
+        <p class="footer-motto">¡Que gane el mejor... o el que tenga más suerte!</p>
+    </footer>
+
+    <script>
+        const slogans = [
+            "¡Ale Román, a llorar!",
+            "¡Siente la Hypermotion en cada jornada!",
+            "¿Kikecoa, ganará este año?",
+            "¡Bad Topo rival a batir!",
+            "¡El Big Data dice que el manager revelación será...!",
+            "¡Cardenas Simeone! ¿se repetirá la historia?"
+        ];
+        const randomSloganElement = document.getElementById('random-slogan');
+        const randomIndex = Math.floor(Math.random() * slogans.length);
+        randomSloganElement.textContent = slogans[randomIndex];
+    </script>
+
+</body>
+</html>
